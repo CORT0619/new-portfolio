@@ -12,8 +12,8 @@ import { GalleryModule } from './gallery/gallery.module';
   imports: [
     CommonModule,
     AboutModule,
-    ContactModule/*,
-    GalleryModule*/
+    ContactModule,
+    GalleryModule
   ],
   exports: [
     MainComponent
