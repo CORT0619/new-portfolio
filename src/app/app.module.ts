@@ -5,9 +5,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 /* Module Imports */
-import { GalleryModule } from './gallery/gallery.module';
 import { FooterModule } from './footer/footer.module';
 import { HeaderModule } from './header/header.module';
+import { MainModule } from './main/main.module';
 
 @NgModule({
   declarations: [
@@ -16,9 +16,9 @@ import { HeaderModule } from './header/header.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    GalleryModule,
     FooterModule,
-    HeaderModule
+    HeaderModule,
+    MainModule
   ],
   providers: [],
   bootstrap: [AppComponent]
