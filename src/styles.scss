@@ -2,14 +2,16 @@
 
 /* fonts */
 @font-face {
-    font-family: "Montserrat-ExtraLight";
-    src: url("assets/fonts/Montserrat-ExtraLight.ttf");
+    font-family: 'Montserrat-ExtraLight';
+    src: url('/assets/fonts/Montserrat-ExtraLight.ttf');
+    // src: url('/src/assets/fonts/Montserrat-ExtraLight.ttf');
 };
 
 /* breakpoints */
 $breakpoints: (
-    mobile: 700px,
-    tablet: 900px
+    mobile: 375px, // 320px
+    tablet: 800px, // 768px
+    desktop: 1024px
 );
 
 /* colors */
