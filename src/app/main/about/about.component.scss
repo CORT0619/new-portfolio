@@ -1,0 +1,50 @@
+@import '../../../styles';
+
+.about {
+  padding: $global-padding;
+  background-color: #FFF;
+  padding-top: 60px;
+
+  .profile {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    &__picture {
+        height: 200px;
+        border-radius: 50%;
+        align-self: center;
+    }
+    button {
+      margin: 15px 0;
+      padding: 15px 20px;
+      font-family: 'PT Sans', sans-serif;
+      font-weight: 700;
+      font-size: 1rem;
+      transition: all 0.5s ease;
+      border: none;
+      border-radius: 2px;
+      color: #FFF;
+      background-color: #5a5555;
+    }
+
+    button:hover {
+      color: #5a5555;
+      background-color: #d8d9d8;
+    }
+  }
+
+  &__info {
+    ul {
+      padding: 0;
+
+      li {
+        margin-bottom: 10px; 
+      }
+
+      span {
+        font-weight: bold;
+      }
+    }
+  }
+}  

@@ -1,10 +1,56 @@
+@import '../../styles';
+
 footer {
+    padding: $global-padding;
+    background-color: #FFF;
     font-family: "Montserrat-ExtraLight", Helvetica, Arial, Lucida, sans-serif;
-    font-size: 16px;
+    // font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media only screen and (max-device-width: 499px) {
+        .footer__links {
+            display: none;
+        }
+
+        .copyright {
+            font-size: 10pt;
+        }
+    }
+
+    @media only screen and (max-device-width: 799px) {
+        .footer__links {
+            // display: none;
+        }
+    }    
+
+    .footer__links {
+        margin: 0;
+        padding: 0;
+
+        .email {
+            background-color: #D8D9D8;
+        }
+
+        .emailLink a {
+            height: 67px;
+            width: 67px;
+            border-radius: 50%;
+            display: inline-block;
+            background-color: lightgrey;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    }
 
     .footer__links li {
         list-style-type: none;
         display: inline-block;
         padding: 2px 10px;
     }
+
+
 }

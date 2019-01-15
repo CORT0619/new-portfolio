@@ -1,6 +1,7 @@
 <header>
+    <span>Crystal R. Williams</span>
     <nav role="navigation">
-        <div>
+        <div class="nav-container">
             <ul class="links">
                 <li>
                     <a href="#home">Home</a>
@@ -17,9 +18,28 @@
             </ul>
         </div>
     </nav>
-    <div class="menu">
-        <span class="menu__hamburger"></span>
-        <span class="menu__hamburger"></span>
-        <span class="menu__hamburger"></span>
+    <div class="menu" (click)="displayMenu(mobileNav)">
+        <button>
+            <span class="menu__hamburger"></span>
+            <span class="menu__hamburger"></span>
+            <span class="menu__hamburger"></span>
+        </button>
     </div>
 </header>
+<section id="mobile_nav" #mobileNav [@openClose]="showMenu ? 'open' : 'closed' ">
+<!-- <section id="mobile_nav" #mobileNav [ngClass]="showMenu ? 'displayMenu' : 'hideMenu' "> -->
+    <ul class="mobile_links">
+        <li>
+            <a href="#home">Home</a>
+        </li>
+        <li>
+            <a href="#about">About</a>
+        </li>
+        <li>
+            <a href="#gallery">Gallery</a>
+        </li>
+        <li>
+            <a href="#contact">Contact</a>
+        </li>
+    </ul>
+</section>

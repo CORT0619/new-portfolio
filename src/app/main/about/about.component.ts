@@ -12,4 +12,10 @@ export class AboutComponent implements OnInit {
   ngOnInit() {
   }
 
+  /**
+   * open resume
+   */
+  openPDF() {
+    window.open('../../../assets/other/resume.pdf', ); // move to file
+  }
 }
