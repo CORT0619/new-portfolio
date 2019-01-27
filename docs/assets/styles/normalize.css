@@ -303,3 +303,14 @@ template {
 [hidden] {
     display: none;
 }
+
+ul {
+    list-style: none;
+}
+
+/**
+  * removes outline after click
+  */
+button:focus {
+    outline: none;
+}
