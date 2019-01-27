@@ -7,6 +7,16 @@
     // src: url('/src/assets/fonts/Montserrat-ExtraLight.ttf');
 };
 
+@font-face {
+    font-family: 'Montserrat-Medium';
+    src: url('assets/fonts/Montserrat-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'OpenSans-Regular';
+    src: url('/assets/fonts/OpenSans-Regular.ttf');
+}
+
 /* breakpoints */
 $breakpoints: (
     mobile: 375px, // 320px
@@ -32,4 +42,5 @@ $global-padding: 25px;
 /* styling for page headings */
 .section-heading h2 {
     text-transform: uppercase;
+    font-family: "Montserrat-Medium", sans-serif;
 }
