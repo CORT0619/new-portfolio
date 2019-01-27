@@ -1,0 +1,10 @@
+language: JAVASCRIPT
+
+deploy:
+  local-dir: docs
+  provider: pages
+  skip-cleanup: true
+  github-token: $GHACCESS
+  keep-history: true
+  on:
+    branch: master
