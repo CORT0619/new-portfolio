@@ -18,8 +18,9 @@
     button {
       margin: 15px 0;
       padding: 15px 20px;
-      font-family: 'PT Sans', sans-serif;
-      font-weight: 700;
+      // font-family: 'PT Sans', sans-serif;
+      font-family: 'Hind Madurai', sans-serif;
+      // font-weight: 700;
       font-size: 1rem;
       transition: all 0.5s ease;
       border: none;
@@ -35,7 +36,8 @@
   }
 
   &__info {
-    font-family: 'OpenSans-Regular';
+    // font-family: 'OpenSans-Regular';
+    font-family: 'Hind Madurai', sans-serif;
     ul {
       padding: 0;
 
@@ -49,3 +51,12 @@
     }
   }
 }  
+
+/* Breakpoints */
+@media only screen and (min-device-width: map-get($breakpoints, tablet)) {
+  .about {
+    .profile {
+      align-items: center;
+    }
+  }
+}

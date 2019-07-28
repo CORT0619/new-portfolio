@@ -14,21 +14,16 @@ import {
   animations: [
     trigger('openClose', [
       state('open', style({
-        height: '125px',
-        // opacity: 1,
-        // backgroundColor: '#d8d9d859'
-        backgroundColor: 'rgba(216, 217, 216, 1)'
+        height: '13rem',
+        opacity: 1,
+        backgroundColor: 'rgba(216, 217, 216, 0.92)'
       })),
       state('closed', style({
         height: '0',
         opacity: 0,
-        backgroundColor: '#FFF'
       })),
-      transition('open => closed', [
+      transition('open <=> closed', [
         animate('1s')
-      ]),
-      transition('closed => open', [
-        animate('0.5s')
       ])
     ])
   ]

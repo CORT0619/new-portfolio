@@ -16,7 +16,9 @@ header {
     align-items: center;
     position: fixed;
     width: calc(100% - 50px);
-    box-shadow: 9px 1px 5px 2px lightgrey;
+    // box-shadow: 9px 1px 5px 2px lightgrey;
+    box-shadow: 3px 0px 3px 2px lightgrey;
+    z-index: 1000;
 
     nav {
         display: flex;
@@ -113,18 +115,18 @@ header {
 }
 
 #mobile_nav {
-    // background-color: #d8d9d859;
-    // background-color: rgba(216, 217, 216, 1);
     display: flex;
     justify-content: center;
     position: absolute;
     width: 100%;
+    box-shadow: 5px 2px 9px -3px rgb(0, 34, 34);
 
     .mobile_links {
         list-style: none;
         margin: 0;
         padding: 0;
         padding-top: 20px;
+        margin-top: calc(45px + 10px);
     }
 
     .mobile_links li {

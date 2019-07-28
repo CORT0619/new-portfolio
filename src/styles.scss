@@ -17,10 +17,20 @@
     src: url('assets/fonts/OpenSans-Regular.ttf');
 }
 
+@font-face {
+    font-family: 'Lora';
+    src: url('assets/fonts/Lora/Lora-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Hind Madurai';
+    src: url('assets/fonts/Hind_Madurai/HindMadurai-Regular.ttf');
+}
+
 /* breakpoints */
 $breakpoints: (
     mobile: 375px, // 320px
-    tablet: 800px, // 768px
+    tablet: 768px, // 800px
     desktop: 1024px
 );
 
@@ -41,6 +51,8 @@ $global-padding: 25px;
 
 /* styling for page headings */
 .section-heading h2 {
-    text-transform: uppercase;
-    font-family: "Montserrat-Medium", sans-serif;
+    // text-transform: uppercase;
+    // font-family: "Montserrat-Medium", sans-serif;
+    font-family: 'Lora', serif;
+    font-weight: normal;
 }
